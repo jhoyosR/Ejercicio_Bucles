@@ -1,13 +1,14 @@
-const numRows = 17;
-const numCols = 43;
+const y = 7;
+const x = 5;
+let i = 0;
 
-// Generar la parte superior del patrón
-for (let i = 1; i <= numRows; i++) {
-  if (i % 2 !== 0) {
-    console.log("* ".repeat(6) + "=".repeat((numCols - 8)));
-  }
+while (i < y) {
+    if (i % 2 === 0) {
+        console.log("* ".repeat(x) + "=".repeat(x * 9));
+    } else {
+        console.log("* ".repeat(x + 1) + "=".repeat(x * 9));
+    }
+    i++;
 }
 
-// Generar la línea de igual
-console.log("=".repeat(numCols / 1)); 
-
+console.log("=".repeat(52));
